@@ -250,6 +250,7 @@ overflow: hidden;
 
 .paragraph h1{
     position: absolute;
+    display: block;
     top: 20%;
     left: 28%;
     color: white;
@@ -258,13 +259,16 @@ overflow: hidden;
 }
 
 .paragraph p{
+    width: 100%;
    opacity: 0;
    position: absolute;
+   display: block;
    top: 30%;
    left: 5%;
    right: 5%;
    color: white;
    animation: paragraph 1s 0.7s forwards;
+   font-style: italic;
 }
 
 @keyframes paragraph{
@@ -284,13 +288,11 @@ overflow: hidden;
         clear: right;
         text-decoration: none;
         color: green;
-        margin: 0 4px;
+        margin: 0 1px;
         line-height: 20px;
+        width: 100%;
     }
     
-    .header .icon i:hover{
-        color: red;
-    }
     
     a .menu-btn {
         padding-left: .8rem;
@@ -346,10 +348,11 @@ overflow: hidden;
         display: block;
         display: flex;
         width: 100%;
+        overflow: hidden;
     }
 
     .header .logo{
-        font-size: 1.5rem;
+        font-size: .8rem;
         text-decoration: none;
         color: black;
         display: flex;
@@ -428,6 +431,7 @@ overflow: hidden;
           width: 100%;
           position: relative;
           padding-right: 0.5rem;
+          display: block;
       }
 
       .logospace{
@@ -458,11 +462,14 @@ overflow: hidden;
         cursor: pointer;
     }
 
-    .backImage{
+    .backImage img{
         width: 100%;
         height: 600px;
-        object-fit:cover;
-    }
+        object-fit: cover;
+        opacity: 0.5;
+        animation: scale 20s;
+        overflow: hidden;
+        }
 
    .logo img{
         height: 50px;
@@ -470,6 +477,13 @@ overflow: hidden;
     }
       
 }
+
+
+
+
+
+
+
 
 
 /* footer */
